@@ -23,4 +23,5 @@ return {
       table.insert(opts.sections.lualine_x, 2, LazyVim.lualine.cmp_source("cmp_tabnine", icon))
     end,
   },
+  { "brenoprata10/nvim-highlight-colors" },
 }
