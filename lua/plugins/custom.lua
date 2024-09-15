@@ -2,8 +2,33 @@ return {
   {
     "xiyaowong/transparent.nvim",
   },
-  -- { "echasnovski/mini.indentscope", enabled = false },
-  { "lukas-reineke/indent-blankline.nvim", enabled = false },
+  {
+    "echasnovski/mini.indentscope",
+    opts = {
+      -- symbol = "•",
+      symbol = "╎",
+      -- options = { try_as_border = true },
+    },
+  },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    opts = function()
+      -- local highlight = {
+      --   "CursorColumn",
+      --   "Whitespace",
+      -- }
+      return {
+        indent = { char = "•" },
+        -- indent = { highlight = highlight, char = "•" },
+        whitespace = {
+          -- highlight = highlight,
+          remove_blankline_trail = true,
+        },
+        scope = { enabled = false },
+      }
+    end,
+  },
   {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
