@@ -2,6 +2,8 @@ return {
   {
     "xiyaowong/transparent.nvim",
   },
+  -- { "echasnovski/mini.indentscope", enabled = false },
+  { "lukas-reineke/indent-blankline.nvim", enabled = false },
   {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
@@ -14,6 +16,7 @@ return {
       },
     },
   },
+  { "edgedb/edgedb-vim" },
   {
     "nvim-lualine/lualine.nvim",
     optional = true,
