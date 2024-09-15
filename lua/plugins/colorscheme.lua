@@ -1,5 +1,14 @@
 return {
   {
+    "LazyVim/LazyVim",
+    opts = {
+      -- colorscheme = "synthweave",
+      colorscheme = "fluoromachine",
+      -- colorscheme = "tokyonight",
+      -- colorscheme = "rose-pine-moon",
+    },
+  },
+  {
     "rose-pine/neovim",
     name = "rose-pine",
     lazy = false,
@@ -7,15 +16,28 @@ return {
     opts = {},
   },
   {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "rose-pine-dawn",
-    },
+    "folke/tokyonight.nvim",
   },
-  -- {
-  --   "folke/tokyonight.nvim",
-  --   enabled = false,
-  -- },
+  { "EdenEast/nightfox.nvim" },
+  { "rebelot/kanagawa.nvim" },
+  { "catppuccin/nvim" },
+  {
+    "maxmx03/fluoromachine.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      local fm = require("fluoromachine")
+
+      fm.setup({
+        glow = true,
+        theme = "fluoromachine",
+        transparent = true,
+      })
+    end,
+  },
+  {
+    "samharju/synthweave.nvim",
+  },
 
   -- {
   --   "jesseleite/nvim-noirbuddy",
@@ -26,12 +48,12 @@ return {
   --   priority = 1000,
   --   opts = {},
   -- },
-  -- {
-  --   "rebelot/kanagawa.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = {},
-  -- },
+  {
+    "rebelot/kanagawa.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
   -- {
   --   "embark-theme/vim",
   --   name = "embark",
