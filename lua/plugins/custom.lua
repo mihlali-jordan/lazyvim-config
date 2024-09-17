@@ -1,4 +1,6 @@
 return {
+  { "imsnif/kdl.vim" },
+  { "mg979/vim-visual-multi" },
   {
     "xiyaowong/transparent.nvim",
   },
