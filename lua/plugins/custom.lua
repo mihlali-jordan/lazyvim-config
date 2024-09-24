@@ -5,6 +5,44 @@ return {
     "xiyaowong/transparent.nvim",
   },
   {
+    "https://gitlab.com/itaranto/plantuml.nvim",
+    version = "*",
+    config = function()
+      require("plantuml").setup()
+    end,
+  },
+
+  {
+    "javiorfo/nvim-soil",
+
+    -- Optional for puml syntax highlighting:
+    dependencies = { "javiorfo/nvim-nyctophilia" },
+
+    lazy = true,
+    ft = "plantuml",
+    opts = {
+      -- If you want to change default configurations
+
+      -- If you want to use Plant UML jar version instead of the install version
+      -- puml_jar = "/path/to/plantuml.jar",
+
+      -- If you want to customize the image showed when running this plugin
+      image = {
+        darkmode = false, -- Enable or disable darkmode
+        format = "png", -- Choose between png or svg
+
+        -- This is a default implementation of using nsxiv to open the resultant image
+        -- Edit the string to use your preferred app to open the image (as if it were a command line)
+        -- Some examples:
+        -- return "feh " .. img
+        -- return "xdg-open " .. img
+        execute_to_open = function(img)
+          return "nsxiv -b " .. img
+        end,
+      },
+    },
+  },
+  {
     "echasnovski/mini.indentscope",
     opts = {
       -- symbol = "•",
@@ -16,15 +54,9 @@ return {
     "lukas-reineke/indent-blankline.nvim",
     main = "ibl",
     opts = function()
-      -- local highlight = {
-      --   "CursorColumn",
-      --   "Whitespace",
-      -- }
       return {
-        indent = { char = "•" },
-        -- indent = { highlight = highlight, char = "•" },
+        indent = { char = "•", tab_char = "•" },
         whitespace = {
-          -- highlight = highlight,
           remove_blankline_trail = true,
         },
         scope = { enabled = false },
@@ -37,7 +69,7 @@ return {
       window = {
         position = "float",
         popup = { -- settings that apply to float position only
-          size = { height = "17", width = "65" },
+          size = { height = "25", width = "70" },
           position = "50%", -- 50% means center it
         },
       },
