@@ -1,4 +1,5 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
+-- init.lua
 require("config.lazy")
 -- require("notify").setup({
 --   background_colour = "#1a1b26",
@@ -87,3 +88,6 @@ require("nvim-highlight-colors").setup({
   exclude_filetypes = {},
   exclude_buftypes = {},
 })
+
+require("transparent").clear_prefix("NeoTree")
+require("transparent").clear_prefix("LazyGit")
