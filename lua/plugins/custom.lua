@@ -1,4 +1,12 @@
 return {
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      diagnostics = {
+        virtual_text = false,
+      },
+    },
+  },
   { "imsnif/kdl.vim" },
   { "mg979/vim-visual-multi" },
   {
@@ -147,6 +155,14 @@ return {
           file_types = { "markdown", "Avante" },
         },
         ft = { "markdown", "Avante" },
+      },
+    },
+    {
+      "stevearc/conform.nvim",
+      opts = {
+        formatters_by_ft = {
+          python = { "black", "isort" },
+        },
       },
     },
   },
