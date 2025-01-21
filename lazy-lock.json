@@ -57,6 +57,7 @@
   "persistence.nvim": { "branch": "main", "commit": "f6aad7dde7fcf54148ccfc5f622c6d5badd0cc3d" },
   "plantuml.nvim": { "branch": "master", "commit": "6983e482c9d272a764aa7f8b63be30ee59c7fc2d" },
   "plenary.nvim": { "branch": "master", "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d" },
+  "poimandres.nvim": { "branch": "main", "commit": "a488957d803943a4201ac3b774913fcafa9e6b3a" },
   "rose-pine": { "branch": "main", "commit": "07a887a7bef4aacea8c7caebaf8cbf808cdc7a8e" },
   "snacks.nvim": { "branch": "main", "commit": "f29c5865a8c71691b0be2311a7aa8d82caf4f4f3" },
   "synthweave.nvim": { "branch": "master", "commit": "50cb17af14dbdf8a2af634c40b9b20298f67aba0" },
@@ -72,5 +73,6 @@
   "vim-colors-github": { "branch": "master", "commit": "ee42a68d95078f5a3d1c0fb14462cc781b244ee2" },
   "vim-visual-multi": { "branch": "master", "commit": "a6975e7c1ee157615bbc80fc25e4392f71c344d4" },
   "vscode": { "branch": "main", "commit": "18097b7aa47538afa780c821309c8b992972d726" },
-  "which-key.nvim": { "branch": "main", "commit": "68e37e12913a66b60073906f5d3f14dee0de19f2" }
+  "which-key.nvim": { "branch": "main", "commit": "68e37e12913a66b60073906f5d3f14dee0de19f2" },
+  "zenpai.nvim": { "branch": "main", "commit": "8abf0feecc0edf8087b442aad6c6eb3c5a648884" }
 }
