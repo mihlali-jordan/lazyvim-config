@@ -21,7 +21,7 @@ return {
   },
 
   {
-    "vutlhari/zenpai.nvim",
+    dir = "~/Code/p/zenpai.nvim",
     dependencies = {
       "MunifTanjim/nui.nvim",
       "nvim-lua/plenary.nvim",
