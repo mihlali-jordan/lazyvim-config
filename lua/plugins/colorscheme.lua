@@ -17,10 +17,13 @@ return {
       -- colorscheme = "kanagawa",
       -- colorscheme = "embark",
       -- colorscheme = "abscs",
-      colorscheme = "bogster",
+      -- colorscheme = "bogster",
+      -- colorscheme = "ironman_dark",
+      colorscheme = "darkmatrix",
     },
   },
 
+  { "i3d/vim-jimbothemes" },
 
   {
     "olivercederborg/poimandres.nvim",
